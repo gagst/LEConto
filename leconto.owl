@@ -1,0 +1,2152 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/gagst/leconto"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/gagst/leconto">
+    <Prefix name="" IRI="https://github.com/gagst/leconto"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.org/dc/elements/1.1/</Import>
+    <Import>http://qudt.org/2.1/schema/qudt</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/abstract"/>
+        <Literal>The ontology covers the implementation-agnostic aspects related to the multi-vector energy management in local energy communities (LECs).</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/author"/>
+        <Literal>Elias Goller</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/author"/>
+        <Literal>Stepan Gagin</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/rights"/>
+        <Literal>CC BY 4.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal>LEConto - Local Energy Communities Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>1.0.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AggregatedMeasurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AggregationType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anomaly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnomalyDetectionMessage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArtificialMeasurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boiler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Calorimeter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChargingStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consumption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConsumptionComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DemandResponseCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DemandResponseRule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricBattery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricityMeter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyVector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FixedComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FixedConsumptionComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FixedGenerationComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlexibleComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlexibleConsumptionComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlexibleGenerationComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GenerationComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Generator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatPump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interconnector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InterconnectorComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lighting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaximizationGoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeasurementDataPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Message"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinimizationGoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OptimizationComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OptimizationGoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Radiator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Storage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StorageComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeFlexibleConsumptionComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/AnomalyDetectionService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/AssetMessage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/BuildingComplex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/DataAnalysisService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/DemandManagementService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/Elevator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/ForecastingService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/Gas_Boiler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/MeasurementMessage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/MeasurementService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/MultiVectorOptimizationService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/RealMeasurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/ResidentialConsumer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/SolarCollector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/VectorOptimizationService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/WaterTreatmentPlant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="p_description/WindTurbine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://qudt.org/schema/qudt/unit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#baseFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#basedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connectionInverse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consumesFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsPositionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#controlledBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#controls"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#forAsset"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#forEnergyVector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generatesTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComponentConsumption"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComponentGeneration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasControlAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMeasurement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasQuantityKind"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConsumptionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isControlActionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGenerationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMaxConsumptionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMaxGenerationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isQuantityKindOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUnitOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#maxConsumption"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#maxGeneration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ownedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#owns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#positionedAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="p_description/createdBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="p_description/creates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="p_description/updatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="p_description/updates"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.linkedmodel.org/schema/vaem#owner"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#abbreviation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#capacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#createdAt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#endTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#falseMessage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#firstName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isExternal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lastName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#latitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#longitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maxCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#message"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#multiplier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#password"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#startTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#timeFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#timeTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#timestamp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#trueMessage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#value"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Difference"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Max"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Min"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#maximization_of_self_sufficiency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#minimization_of_emissions"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://qudt.org/schema/qudt/informativeReference"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="http://qudt.org/schema/qudt/LatexString"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="rdf:HTML"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AggregatedMeasurement"/>
+        <Class IRI="#Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AggregatedMeasurement"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#basedOn"/>
+            <Class IRI="#Measurement"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnomalyDetectionMessage"/>
+        <Class IRI="p_description/MeasurementMessage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArtificialMeasurement"/>
+        <Class IRI="#Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asset"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#controlledBy"/>
+            <Class IRI="#User"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asset"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasControlAction"/>
+            <Class IRI="#ControlAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asset"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#User"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asset"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#positionedAt"/>
+            <Class IRI="#Asset"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asset"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#id"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asset"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#latitude"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asset"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#longitude"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asset"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boiler"/>
+        <Class IRI="#Generator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Calorimeter"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChargingStation"/>
+        <Class IRI="#Interconnector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consumption"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConsumptionComponent"/>
+        <Class IRI="#OptimizationComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConsumptionComponent"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#consumesFrom"/>
+            <Class IRI="#EnergyVector"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlAction"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricBattery"/>
+        <Class IRI="#Storage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricityMeter"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FixedComponent"/>
+        <Class IRI="#OptimizationComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FixedConsumptionComponent"/>
+        <Class IRI="#ConsumptionComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FixedConsumptionComponent"/>
+        <Class IRI="#FixedComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FixedConsumptionComponent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComponentConsumption"/>
+            <Class IRI="#Measurement"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FixedGenerationComponent"/>
+        <Class IRI="#FixedComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FixedGenerationComponent"/>
+        <Class IRI="#GenerationComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FixedGenerationComponent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComponentGeneration"/>
+            <Class IRI="#Measurement"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flat"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlexibleComponent"/>
+        <Class IRI="#OptimizationComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlexibleComponent"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#isExternal"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlexibleConsumptionComponent"/>
+        <Class IRI="#ConsumptionComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlexibleConsumptionComponent"/>
+        <Class IRI="#FlexibleComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlexibleConsumptionComponent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#maxConsumption"/>
+            <Class IRI="#Measurement"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlexibleGenerationComponent"/>
+        <Class IRI="#FlexibleComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlexibleGenerationComponent"/>
+        <Class IRI="#GenerationComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlexibleGenerationComponent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#maxGeneration"/>
+            <Class IRI="#Measurement"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GenerationComponent"/>
+        <Class IRI="#OptimizationComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GenerationComponent"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generatesTo"/>
+            <Class IRI="#EnergyVector"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Generator"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatPump"/>
+        <Class IRI="#Interconnector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interconnector"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InterconnectorComponent"/>
+        <Class IRI="#OptimizationComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lighting"/>
+        <Class IRI="#Consumption"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaximizationGoal"/>
+        <Class IRI="#OptimizationGoal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#forAsset"/>
+            <Class IRI="#Asset"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#forEnergyVector"/>
+            <Class IRI="#EnergyVector"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasQuantityKind"/>
+            <Class IRI="http://qudt.org/schema/qudt/QuantityKind"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasUnit"/>
+            <Class IRI="http://qudt.org/schema/qudt/Unit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeasurementDataPoint"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#timestamp"/>
+            <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeasurementDataPoint"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#value"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Message"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#createdAt"/>
+            <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Message"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#endTime"/>
+            <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Message"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#id"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Message"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#message"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Message"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#startTime"/>
+            <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinimizationGoal"/>
+        <Class IRI="#OptimizationGoal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OptimizationComponent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#connection"/>
+            <Class IRI="#EnergyVector"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OptimizationComponent"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OptimizationGoal"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasWeight"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PV"/>
+        <Class IRI="#Generator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radiator"/>
+        <Class IRI="#Consumption"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Storage"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StorageComponent"/>
+        <Class IRI="#OptimizationComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StorageComponent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#capacity"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StorageComponent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#maxCapacity"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalStorage"/>
+        <Class IRI="#Storage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeFlexibleConsumptionComponent"/>
+        <Class IRI="#ConsumptionComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeFlexibleConsumptionComponent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComponentConsumption"/>
+            <Class IRI="#Measurement"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeFlexibleConsumptionComponent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#timeFrom"/>
+            <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeFlexibleConsumptionComponent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#timeTo"/>
+            <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#email"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#firstName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#id"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#lastName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#password"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/AnomalyDetectionService"/>
+        <Class IRI="p_description/Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/AssetMessage"/>
+        <Class IRI="#Message"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/BuildingComplex"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/DataAnalysisService"/>
+        <Class IRI="p_description/Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/DemandManagementService"/>
+        <Class IRI="p_description/Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/Elevator"/>
+        <Class IRI="#Consumption"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/ForecastingService"/>
+        <Class IRI="p_description/Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/Gas_Boiler"/>
+        <Class IRI="#Boiler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/MeasurementMessage"/>
+        <Class IRI="#Message"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/MeasurementService"/>
+        <Class IRI="p_description/Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/MultiVectorOptimizationService"/>
+        <Class IRI="p_description/Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/RealMeasurement"/>
+        <Class IRI="#Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/ResidentialConsumer"/>
+        <Class IRI="#Consumption"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/SolarCollector"/>
+        <Class IRI="#Generator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/VectorOptimizationService"/>
+        <Class IRI="p_description/Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/WaterTreatmentPlant"/>
+        <Class IRI="#Consumption"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="p_description/WindTurbine"/>
+        <Class IRI="#Generator"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#AggregationType"/>
+        <NamedIndividual IRI="#Difference"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AggregationType"/>
+        <NamedIndividual IRI="#Max"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AggregationType"/>
+        <NamedIndividual IRI="#Mean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AggregationType"/>
+        <NamedIndividual IRI="#Min"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AggregationType"/>
+        <NamedIndividual IRI="#Sum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MaximizationGoal"/>
+        <NamedIndividual IRI="#maximization_of_self_sufficiency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MinimizationGoal"/>
+        <NamedIndividual IRI="#minimization_of_emissions"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#consumesFrom"/>
+        <ObjectProperty IRI="#connection"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#generatesTo"/>
+        <ObjectProperty IRI="#connection"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasComponentConsumption"/>
+        <ObjectProperty IRI="#connectionInverse"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasComponentGeneration"/>
+        <ObjectProperty IRI="#connectionInverse"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="p_description/createdBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="p_description/creates"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="p_description/updatedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="p_description/updates"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#baseFor"/>
+        <ObjectProperty IRI="#basedOn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#connection"/>
+        <ObjectProperty IRI="#connectionInverse"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#consumesFrom"/>
+        <ObjectProperty IRI="#hasComponentConsumption"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#containsPositionOf"/>
+        <ObjectProperty IRI="#positionedAt"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#controlledBy"/>
+        <ObjectProperty IRI="#controls"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#forAsset"/>
+        <ObjectProperty IRI="#hasMeasurement"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#forEnergyVector"/>
+        <ObjectProperty IRI="#hasMeasurement"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#generatesTo"/>
+        <ObjectProperty IRI="#hasComponentGeneration"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasControlAction"/>
+        <ObjectProperty IRI="#isControlActionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasUnit"/>
+        <ObjectProperty IRI="#isUnitOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isMaxConsumptionOf"/>
+        <ObjectProperty IRI="#maxConsumption"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isMaxGenerationOf"/>
+        <ObjectProperty IRI="#maxGeneration"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#ownedBy"/>
+        <ObjectProperty IRI="#owns"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="p_description/createdBy"/>
+        <ObjectProperty IRI="p_description/creates"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="p_description/updatedBy"/>
+        <ObjectProperty IRI="p_description/updates"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#positionedAt"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#baseFor"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#basedOn"/>
+        <Class IRI="#AggregatedMeasurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connection"/>
+        <Class IRI="#OptimizationComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectionInverse"/>
+        <Class IRI="#EnergyVector"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consumesFrom"/>
+        <Class IRI="#OptimizationComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#controlledBy"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#controls"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#forAsset"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#forEnergyVector"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generatesTo"/>
+        <Class IRI="#OptimizationComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComponentConsumption"/>
+        <Class IRI="#EnergyVector"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComponentGeneration"/>
+        <Class IRI="#EnergyVector"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasControlAction"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMeasurement"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMeasurement"/>
+        <Class IRI="#EnergyVector"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasQuantityKind"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasUnit"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasUnit"/>
+        <Class IRI="#MeasurementDataPoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConsumptionOf"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isControlActionOf"/>
+        <Class IRI="#ControlAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGenerationOf"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMaxConsumptionOf"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMaxGenerationOf"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#maxConsumption"/>
+        <Class IRI="#FlexibleConsumptionComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#maxGeneration"/>
+        <Class IRI="#FlexibleGenerationComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ownedBy"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#owns"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="p_description/createdBy"/>
+        <Class IRI="#Message"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="p_description/creates"/>
+        <Class IRI="p_description/Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="p_description/updatedBy"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="p_description/updates"/>
+        <Class IRI="p_description/Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#baseFor"/>
+        <Class IRI="#AggregatedMeasurement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedOn"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#connection"/>
+        <Class IRI="#EnergyVector"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#connectionInverse"/>
+        <Class IRI="#OptimizationComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consumesFrom"/>
+        <Class IRI="#EnergyVector"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#controlledBy"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#controls"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#forAsset"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#forEnergyVector"/>
+        <Class IRI="#EnergyVector"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generatesTo"/>
+        <Class IRI="#EnergyVector"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponentConsumption"/>
+        <Class IRI="#OptimizationComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponentGeneration"/>
+        <Class IRI="#OptimizationComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasControlAction"/>
+        <Class IRI="#ControlAction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMeasurement"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConsumptionOf"/>
+        <Class IRI="#ConsumptionComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isControlActionOf"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGenerationOf"/>
+        <Class IRI="#GenerationComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMaxConsumptionOf"/>
+        <Class IRI="#FlexibleConsumptionComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMaxGenerationOf"/>
+        <Class IRI="#FlexibleGenerationComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isQuantityKindOf"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isUnitOf"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isUnitOf"/>
+        <Class IRI="#MeasurementDataPoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#maxConsumption"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#maxGeneration"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ownedBy"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#owns"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="p_description/createdBy"/>
+        <Class IRI="p_description/Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="p_description/creates"/>
+        <Class IRI="#Message"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="p_description/updatedBy"/>
+        <Class IRI="p_description/Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="p_description/updates"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#falseMessage"/>
+        <DataProperty IRI="#message"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#trueMessage"/>
+        <DataProperty IRI="#message"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWeight"/>
+        <Class IRI="#OptimizationGoal"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#createdAt"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#endTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#firstName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWeight"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isExternal"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lastName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#startTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#timeFrom"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#timestamp"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AggregatedMeasurement</IRI>
+        <Literal>Aggregated measurement represents data from multiple measurements aggregated using an aggregation operation (dictated by aggregation type).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AggregatedMeasurement</IRI>
+        <Literal>Aggregated Measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AggregationType</IRI>
+        <Literal>Determines the type of aggregation (e.g. Sum or Mean) and is used when aggregating measurements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AggregationType</IRI>
+        <Literal>Aggregation Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Anomaly</IRI>
+        <Literal>Anomaly Detection Services in an energy management system detects different kinds of Anomalies in Measurement Data Points. Different kinds of Anomalies can be configured as individuals.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Anomaly</IRI>
+        <Literal>Anomaly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AnomalyDetectionMessage</IRI>
+        <Literal>An Anomaly Message refers to a Measurement and a type of Anomaly. It can be sent by the Anomaly Detection Service with details about the Anomaly detected to Users this information is relevant to as determined by their User Role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AnomalyDetectionMessage</IRI>
+        <Literal>Anomaly Detection Message</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ArtificialMeasurement</IRI>
+        <Literal>An artificial measurement is created by software services (e.g., forecasting service).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ArtificialMeasurement</IRI>
+        <Literal>Artificial Measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Asset</IRI>
+        <Literal>An Asset may refer to a physical entity in an local energy community that can be a any type of Generator, Consumption, Storage, Location, Sensor, or Interconnector. They can be owned and controlled by a User.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Asset</IRI>
+        <Literal>Asset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Boiler</IRI>
+        <Literal>Boiler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Building</IRI>
+        <Literal>Building</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Calorimeter</IRI>
+        <Literal>Calorimeter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChargingStation</IRI>
+        <Literal>Charging Station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Consumption</IRI>
+        <Literal>Assets that consume from an energy vector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Consumption</IRI>
+        <Literal>Consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConsumptionComponent</IRI>
+        <Literal>A Optimization Component that consumes energy from an Energy Vector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ControlAction</IRI>
+        <Literal>An action that can be taken by a User in regards to controlling an Asset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ControlAction</IRI>
+        <Literal>Control Action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ElectricBattery</IRI>
+        <Literal>Electric Battery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ElectricityMeter</IRI>
+        <Literal>Electricity Meter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnergyVector</IRI>
+        <Literal>A local energy community may consist of multiple energy vectors, for example for Heat, Electricity and Gas. Optimization Components and Assets generate energy to these Energy Vectors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnergyVector</IRI>
+        <Literal>Energy Vector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FixedComponent</IRI>
+        <Literal>An Optimization Component that has a predetermined generation or consumption schedule. That means that, for instance,  there are Measurements that form a forecast for these Optimization Components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FixedComponent</IRI>
+        <Literal>Fixed Component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FixedConsumptionComponent</IRI>
+        <Literal>A Optimization Component that consumes energy from an Energy Vector as predetermined by a forecast or other measurement. It cannot be controlled by users.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FixedConsumptionComponent</IRI>
+        <Literal>Fixed Consumption Component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FixedGenerationComponent</IRI>
+        <Literal>A Optimization Component that generates energy to an Energy Vector as predetermined by a forecast or other measurement. It cannot be controlled by users. For example, a PV might have a forecast for the next 24 hours, for which the Optimization is performed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FixedGenerationComponent</IRI>
+        <Literal>Fixed Generation Component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Flat</IRI>
+        <Literal>Flat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FlexibleComponent</IRI>
+        <Literal>An Optimization Component that is flexible in its generation or consumption. It has a maximum load or generation and can be optimized by an Optimizer to generate/consume up to that amount of energy to/from an Energy Vector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FlexibleComponent</IRI>
+        <Literal>Flexible Component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FlexibleConsumptionComponent</IRI>
+        <Literal>A Optimization Component that consumes up to a certain amount of energy per timestep in an Optimization. It can be optimized in terms of the amount of energy it consumes from the Energy Vector per timestep.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FlexibleConsumptionComponent</IRI>
+        <Literal>Flexible Consumption Component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FlexibleGenerationComponent</IRI>
+        <Literal>A Optimization Component that generates up to a certain amount of energy per timestep in an Optimization. It can be optimized in terms of the amount of energy it generates to the Energy Vector per timestep.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FlexibleGenerationComponent</IRI>
+        <Literal>Flexible Generation Component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GenerationComponent</IRI>
+        <Literal>A Optimization Component that generates energy to an Energy Vector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GenerationComponent</IRI>
+        <Literal>Generation Component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Generator</IRI>
+        <Literal>Assets that generate energy to an energy vector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Generator</IRI>
+        <Literal>Generator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HeatPump</IRI>
+        <Literal>Heat Pump</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Interconnector</IRI>
+        <Literal>Assets that generate and/or consume energy in multiple energy vectors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Interconnector</IRI>
+        <Literal>Interconnector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InterconnectorComponent</IRI>
+        <Literal>An Optimization Component that consumes energy from one Energy Vector and generates the energy in the other Energy Vector. For instance, such component can be used to represent a heat pump.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InterconnectorComponent</IRI>
+        <Literal>Interconnector Component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Lighting</IRI>
+        <Literal>Lighting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Location</IRI>
+        <Literal>Assets that represent some physical location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Location</IRI>
+        <Literal>Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MaximizationGoal</IRI>
+        <Literal>The goal of an Optimization Service to maximize, e.g. self-sufficiency of a local energy community.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MaximizationGoal</IRI>
+        <Literal>Maximization Goal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Measurement</IRI>
+        <Literal>A Measurement represents data received by the energy management system from Assets of local energy community. A Measurement may be connected to multiple Assets. A measurement is usually is measured by an Asset (e.g. a Sensor) and measured for an Asset (e.g. a PV). A Measurement consists of multiple MeasurementDataPoints that are unique in their timestamp and can have different values. Measurement itself contains the metadata that is shared between all MeasurementDataPoints like the Unit, QuantityKind and the Assets it is measured for and by.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Measurement</IRI>
+        <Literal>Measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MeasurementDataPoint</IRI>
+        <Literal>A Measurement consists of multiple MeasurementDataPoints. They are unique in their value and timestamp. The Measurement they are linked to contains the metadata that is the same for all Measurement Data Points such as the Asset they are measured for and by, the Unit and QuantityKind.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MeasurementDataPoint</IRI>
+        <Literal>Measurement Data Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Message</IRI>
+        <Literal>Meassages are non-numerical outputs of the services, e.g., recommendations for users in demand response service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Message</IRI>
+        <Literal>Message</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MinimizationGoal</IRI>
+        <Literal>The goal of an Optimization Service  to minimize, e.g. carbon emissions of a local energy community.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MinimizationGoal</IRI>
+        <Literal>Minimization Goal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OptimizationComponent</IRI>
+        <Literal>An Optimization Component represent assets in the related optimization software service. Each component may refer to one (e.g. PV) or more (e.g. an entire building consisting of a variety of producers and consumers) physical Assets.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OptimizationComponent</IRI>
+        <Literal>Optimization Component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OptimizationGoal</IRI>
+        <Literal>Optimization Goals describe what an Optimizer Service, which utilizes the Optimization Components, optimizes for. This can be the use of renewables in an local energy community, the minimization of carbon emissions, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OptimizationGoal</IRI>
+        <Literal>Optimization Goal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PV</IRI>
+        <Literal>PV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Radiator</IRI>
+        <Literal>Radiator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sensor</IRI>
+        <Literal>Assets that provide measurements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sensor</IRI>
+        <Literal>Sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Storage</IRI>
+        <Literal>Assets that store energy and can generate or consume from an energy vector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Storage</IRI>
+        <Literal>Storage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StorageComponent</IRI>
+        <Literal>An Optimization Component that can store energy and charge and discharge it to connected Energy Vector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StorageComponent</IRI>
+        <Literal>Storage Component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ThermalStorage</IRI>
+        <Literal>Thermal Storage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TimeFlexibleConsumptionComponent</IRI>
+        <Literal>Time-Flexiblee Consumption Components are optimzed to consume energy from one point in time to another. It has a required energy to be cosnumed as parameter, the optimizer tries to arrange  the consumption of the component for when it is best tto achieve the optimization goals. Washing machines are examples of Assets that can be represented by Time-Flexible Consumption Components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TimeFlexibleConsumptionComponent</IRI>
+        <Literal>Time-Flexible Consumption Component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#User</IRI>
+        <Literal>Refers to a User of the energy management system and services and may have different privileges based on their User Role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#User</IRI>
+        <Literal>User</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UserRole</IRI>
+        <Literal>A User Role defines the rights and privileges a User has in energy management system and services.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UserRole</IRI>
+        <Literal>User Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#abbreviation</IRI>
+        <Literal>abbreviation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#baseFor</IRI>
+        <Literal>Describes that a Measurement is aggregated in an Aggregated Measurement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#baseFor</IRI>
+        <Literal>baseFor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#basedOn</IRI>
+        <Literal>An Aggregated Measurement is based on at least one other Measurement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#basedOn</IRI>
+        <Literal>basedOn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#connection</IRI>
+        <Literal>Connects Optimization Component to Energy Vector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#connection</IRI>
+        <Literal>connection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#connectionInverse</IRI>
+        <Literal>Connects Energy Vector to Optimization Component .</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#connectionInverse</IRI>
+        <Literal>connectionInverse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#consumesFrom</IRI>
+        <Literal>An optimization component consumes energy from connected energy vector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#consumesFrom</IRI>
+        <Literal>consumesFrom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#containsPositionOf</IRI>
+        <Literal>The inverse of positionedAt. For example, an energy island contains the position of a building.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#containsPositionOf</IRI>
+        <Literal>containsPositionOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#controlledBy</IRI>
+        <Literal>An Asset may be controlled by a User.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#controlledBy</IRI>
+        <Literal>controlledBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#controls</IRI>
+        <Literal>A User can control an Asset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#controls</IRI>
+        <Literal>controls</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#createdAt</IRI>
+        <Literal>A time stamp that describes when a Message was created.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#createdAt</IRI>
+        <Literal>createdAt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#email</IRI>
+        <Literal>Contains the email of a User in the Energy Island Management System as a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#email</IRI>
+        <Literal>email</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#endTime</IRI>
+        <Literal>A time stamp describing the point in time something ends. Used in the context of Messages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#firstName</IRI>
+        <Literal>A User&apos;s first name.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#firstName</IRI>
+        <Literal>firstName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#forAsset</IRI>
+        <Literal>A Measurement may be made by some Asset (e.g. a sensor) for another Asset (e.g. a PV).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#forAsset</IRI>
+        <Literal>forAsset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#forEnergyVector</IRI>
+        <Literal>Measurements belong to an Energy Vector, this is especially relevant when Measurements are aggregated for Optimizer Components that represent multiple Assets and are connected to an Energy Vector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#forEnergyVector</IRI>
+        <Literal>forEnergyVector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#generatesTo</IRI>
+        <Literal>An optimization component generates energy to connected energy vector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#generatesTo</IRI>
+        <Literal>generatesTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasComponentConsumption</IRI>
+        <Literal>An optimization component consumes energy from connected energy vector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasComponentConsumption</IRI>
+        <Literal>hasComponentConsumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasComponentGeneration</IRI>
+        <Literal>An optimization component generates energy to connected energy vector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasComponentGeneration</IRI>
+        <Literal>hasComponentGeneration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasControlAction</IRI>
+        <Literal>Describes the Control Action exerted over an Asset, e.g. turning it off.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasControlAction</IRI>
+        <Literal>hasControlAction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasWeight</IRI>
+        <Literal>The weight assigned to a specific Optimization Goal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasWeight</IRI>
+        <Literal>hasWeight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isExternal</IRI>
+        <Literal>Describes whether the Asset represented by an Optimizer Component is external or part of the Energy Island, which might be relevant for the Optimizer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isExternal</IRI>
+        <Literal>isExternal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isUnitOf</IRI>
+        <Literal>isUnitOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lastName</IRI>
+        <Literal>A User&apos;s last name.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lastName</IRI>
+        <Literal>lastName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#latitude</IRI>
+        <Literal>Used alongside longitude to describe the geolocation of an Asset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#latitude</IRI>
+        <Literal>latitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#longitude</IRI>
+        <Literal>Used alongside latitude to describe the geolocation of an Asset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#longitude</IRI>
+        <Literal>longitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maxConsumption</IRI>
+        <Literal>Describes the maximum consumption per time step that a Flexible Consumption Optimization Component may consume from an Energy Vector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maxConsumption</IRI>
+        <Literal>maxConsumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maxGeneration</IRI>
+        <Literal>Describes the maximum generation per time step that a Flexible Generation Optimization Component may generate to an Energy Vector.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ownedBy</IRI>
+        <Literal>Describes that an Asset is owned by a User.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ownedBy</IRI>
+        <Literal>ownedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#owns</IRI>
+        <Literal>Describes that a User owns an Asset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#owns</IRI>
+        <Literal>owns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#password</IRI>
+        <Literal>The password a User in the Energy Island Management System selected.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#password</IRI>
+        <Literal>password</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#positionedAt</IRI>
+        <Literal>Assets can be positioned at another asset. For example, a building might be positioned at an energy island.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#positionedAt</IRI>
+        <Literal>positionedAt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#startTime</IRI>
+        <Literal>A time stamp describing the point in time something starts. Used in the context of Messages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#startTime</IRI>
+        <Literal>startTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#timeFrom</IRI>
+        <Literal>Used for Time Shiftable Optimizer Components to describe the starting time selected from when the Component should be active.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#timeFrom</IRI>
+        <Literal>timeFrom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#timeTo</IRI>
+        <Literal>Used for Time Shiftable Optimizer Components to describe the end time selected until when the Component should be active.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#timeTo</IRI>
+        <Literal>timeTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#timestamp</IRI>
+        <Literal>The timestamp when a Measurement was created.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#timestamp</IRI>
+        <Literal>timestamp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#value</IRI>
+        <Literal>The value of a Measurement Data Point.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#value</IRI>
+        <Literal>value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>p_description/AssetMessage</IRI>
+        <Literal>Asset message is related to specific asset (e.g., turn off specific asset).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>p_description/AssetMessage</IRI>
+        <Literal>Asset Message</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>p_description/MeasurementMessage</IRI>
+        <Literal>Measurement message relates to specific measurement. For instance, to warn about missing data points in some measurement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>p_description/MeasurementMessage</IRI>
+        <Literal>Measuremen tMessage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>p_description/RealMeasurement</IRI>
+        <Literal>A real measurement is measured by real-world equipment and not generated by the software service (e.g., forecast).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>p_description/RealMeasurement</IRI>
+        <Literal>Real Measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>p_description/Service</IRI>
+        <Literal>Service represents the software services included in the energy management system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>p_description/Service</IRI>
+        <Literal>Service</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
